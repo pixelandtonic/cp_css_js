@@ -87,6 +87,25 @@ class Cp_css_js_ext {
 			'custom_js'  => array('t', array('rows' => '10'), '')
 		);
 
+		// load in the CSS
+		$css = '<style type="text/css">'
+		     .   '#custom_css, #custom_js { font-family: monospace; }'
+		     . '</style>';
+
+		$this->EE->cp->add_to_head($css);
+
+		// load in the JS
+		$js = '<script type="text/javascript">'
+		    .   '$("#custom_css,#custom_js").keydown(function(event) {'
+		    .     'if (event.keyCode == 9) {'
+		    .       'this.value += "\t";'
+		    .       'event.preventDefault();'
+		    .     '}'
+		    .   '});'
+		    . '</script>';
+
+		$this->EE->cp->add_to_foot($js);
+
 		return $settings;
 	}
 
