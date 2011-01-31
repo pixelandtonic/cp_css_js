@@ -1,0 +1,20 @@
+h1. CP CSS & JS
+
+This extension for ExpressionEngine 2 allows you to add custom CSS and
+Javascript to the Control Panel pages
+
+h3. Requirements
+
+* "ExpressionEngine":http://expressionengine.com/index.php?affiliate=brandonkelly 2.1.2 or later
+
+h3. Installation
+
+* Upload the cp_css_js folder to system/expressionengine/third_party/
+* Enable CP CSS & JS in Add-Ons → Extensions
+* Go to the CP CSS & JS extension settings 
+
+h3. Usage
+
+To add css CSS or Javascript to each of your Control Panel pages, just go to
+CP CSS & JS’ extension settings in Add-Ons → Extensions, and enter the desired
+code into the Custom CSS and Custom Javascript text boxes.
